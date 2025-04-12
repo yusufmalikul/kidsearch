@@ -1,0 +1,43 @@
+/* static/css/style.css */
+body {
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 0 1em;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+}
+
+h1 {
+    color: #0056b3; /* Darker blue for heading */
+    text-align: center;
+}
+
+#search-input {
+    width: 100%;
+    padding: 15px; /* Larger padding */
+    margin-bottom: 1em;
+    font-size: 1.2em; /* Larger font size */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+#result-area {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #ffffff; /* White background for results */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-height: 50px; /* Ensure it's visible even when empty */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Basic loading indicator */
+#result-area.loading::after {
+    content: 'Thinking...';
+    display: block;
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
