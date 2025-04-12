@@ -7,7 +7,7 @@ import json
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_API_URL = "https://openrouter.ai/api/v1/chat/completions"
 # Using gemini-flash-1.5 as discussed, ensure this model is available/suitable on OpenRouter
-MODEL_NAME = "google/gemini-flash-1.5"
+MODEL_NAME = "google/gemini-pro-2.5"
 
 def get_ai_response(query: str) -> str:
     """
